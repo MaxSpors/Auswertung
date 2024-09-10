@@ -4,7 +4,7 @@ import pandas as pd
 import re
 import os
 from datetime import datetime
-# Wir unterscheiden 2 Fälle .txt files und .mca files
+# Wir unterscheiden 2 Fï¿½lle .txt files und .mca files
 
 def extract_field_strength(filename):
     # Extrahiert die Feldstaerke aus dem Dateinamen um die Plots zu benennen und zu ordnen
@@ -52,7 +52,7 @@ def read_out(file_path):
         dCounts = np.sqrt(counts)
         identification=extract_timestamp(file_name)
 
-    mask = counts >= 3
+    mask = counts >= 6
     #MCA = MCA[mask]
     dCounts = dCounts[mask]
     counts = counts[mask]

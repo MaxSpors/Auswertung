@@ -6,9 +6,9 @@ from lmfit import Model, Parameters,fit_report
 
 
 def FeSpectrum(x, p0, p1, p2, p3, p4, p5, p6, p7, p8):
-    # Fitfunktion für die Eisenspektren
+    # Fitfunktion fï¿½r die Eisenspektren
     # x: Wertebereich
-    # p0,...,p8: Fitparameter für die einzelnen Funktionen, siehe unten
+    # p0,...,p8: Fitparameter fï¿½r die einzelnen Funktionen, siehe unten
 
     corr1 = 6.49 / 5.89
     corr2 = 3.53 / 2.93
@@ -22,7 +22,7 @@ def FeSpectrum(x, p0, p1, p2, p3, p4, p5, p6, p7, p8):
 
 def FWHM_calc(MCA_Array: np.ndarray, Counts_Array: np.ndarray, max_counts: float, max_index: int) -> tuple:
     #Berechnet die Halbwertsbreite und die Standardabweichung eines Peaks aus den Messdaten.
-    #Wichtig: Die Messdaten müssen um den Offset bereits bereinigt sein.
+    #Wichtig: Die Messdaten mï¿½ssen um den Offset bereits bereinigt sein.
     
     half_max = max_counts / 2
 
@@ -52,11 +52,11 @@ def FWHM_calc(MCA_Array: np.ndarray, Counts_Array: np.ndarray, max_counts: float
 
 def Approximation_fit_parameters(MCA_Array: np.ndarray, Counts_array: np.ndarray) -> tuple:
 
-    # 1. Bestimme x-Werte der Peaks über die feste relative Beziehung
+    # 1. Bestimme x-Werte der Peaks ï¿½ber die feste relative Beziehung
     max_index_photo = np.argmax(Counts_array)
     max_index_escape = int(np.floor(0.481 * max_index_photo))
 
-    # 2. Schätze aus dem Minimum des Zwischenbereichs die Amplitude der error-function ab
+    # 2. Schï¿½tze aus dem Minimum des Zwischenbereichs die Amplitude der error-function ab
     room_between_peaks_counts = Counts_array[max_index_escape:max_index_photo]
     offset_guess = np.min(room_between_peaks_counts)
 
@@ -67,7 +67,7 @@ def Approximation_fit_parameters(MCA_Array: np.ndarray, Counts_array: np.ndarray
     max_counts_photo = working_counts[max_index_photo]
     max_counts_escape = working_counts[max_index_escape]
 
-    # 3. Nutze die Standardabweichung für die bereinigten Peaks
+    # 3. Nutze die Standardabweichung fï¿½r die bereinigten Peaks
     FWHM_photo, sigma_photo = FWHM_calc(MCA_Array, working_counts, max_counts_photo, max_index_photo)
     FWHM_escape, sigma_escape = FWHM_calc(MCA_Array, working_counts, max_counts_escape, max_index_escape)
 
@@ -76,7 +76,7 @@ def Approximation_fit_parameters(MCA_Array: np.ndarray, Counts_array: np.ndarray
     Threshold = start_value / np.sqrt(np.e)
     limit_index = max_index_escape - int( FWHM_escape)
 
-    # Führe den Scan durch
+    # Fï¿½hre den Scan durch
     time_constant = None
     for i in range(limit_index):
         if working_counts[i] <= Threshold:
@@ -91,19 +91,19 @@ def Approximation_fit_parameters(MCA_Array: np.ndarray, Counts_array: np.ndarray
 
     return max_counts_photo, max_index_photo, max_counts_escape, max_index_escape, sigma_photo, sigma_escape, time_constant, Amp_guess
 
-def SpektrenAnpassung(x: np.ndarray, y: np.ndarray, dy: np.ndarray):   # Setze die Grundlagen für den Anpassungsprozess
+def SpektrenAnpassung(x: np.ndarray, y: np.ndarray, dy: np.ndarray):   # Setze die Grundlagen fï¿½r den Anpassungsprozess
     gmodel = Model(FeSpectrum)
     
-    # Bestimme die Erstschätzer für die Anpassung
+    # Bestimme die Erstschï¿½tzer fï¿½r die Anpassung
     max_counts_photo, max_index_photo, max_counts_escape, max_index_escape, sigma_photo, sigma_escape, time_constant, Amp_Erf = Approximation_fit_parameters(x, y)
     time_constant=time_constant+0.005
 
     params = Parameters()
-    params.add('p0', value=max_counts_photo, min=0.6*max_counts_photo, max=1.3*max_counts_photo)
+    params.add('p0', value=max_counts_photo, min=0.6*max_counts_photo, max=1.5*max_counts_photo)
     params.add('p1', value=max_index_photo, min=max_index_photo-70, max=max_index_photo+70)
-    params.add('p2', value=sigma_photo, min=0.4*sigma_photo, max=1.5*sigma_photo+90)
+    params.add('p2', value=sigma_photo, min=0.2*sigma_photo, max=1.5*sigma_photo+90)
 
-    params.add('p3', value=max_counts_escape, min=0.5*max_counts_escape-30, max=2*max_counts_escape+20)
+    params.add('p3', value=max_counts_escape, min=0.5*max_counts_escape-30, max=4*max_counts_escape+20)
     params.add('p4', value=max_index_escape, min=max_index_escape-70, max=max_index_escape+70)
     params.add('p5', value=sigma_escape, min=0.1*sigma_escape, max=2.4*sigma_escape+90)
 

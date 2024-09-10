@@ -20,35 +20,33 @@ def Offset(file):
     return offset,doffset
 
 def Energiekalibration(xdata,dxdata):
-    # Bestimme Gerade aus den zwei Punkten der Erwartungswerte der Linien, die wir auf die Energie der Linien mappen können.
-    # Bestimme Steigung als rise over run (mittlere Änderungsrate)
+    # Bestimme Gerade aus den zwei Punkten der Erwartungswerte der Linien, die wir auf die Energie der Linien mappen kï¿½nnen.
+    # Bestimme Steigung als rise over run (mittlere ï¿½nderungsrate)
     m= (5.775-2.892)/(xdata[0]-xdata[1])
     dm=(5.775-2.892)/(xdata[0]-xdata[1])**2 *np.sqrt(dxdata[0]**2 +dxdata[1]**2)
 
-    # Bestimme y-Achsenabschnitt als Offset für eine Linie
+    # Bestimme y-Achsenabschnitt als Offset fï¿½r eine Linie
     b= 5.775-m* xdata[0]
     db=np.sqrt((xdata[0]*dm)**2 +(dxdata[0]*m)**2)
     return [m,b],[dm,db]
 
 def calibrationfunction(x,m,b,dm,db):
-    # Baue eine Gerade mit diesen Parametern und den dazugehörigen Fehlern
+    # Baue eine Gerade mit diesen Parametern und den dazugehï¿½rigen Fehlern
     return m*x+b, np.sqrt(dm**2 *x**2 + db**2)
 
 def I_ionisation(MCAdatensatz: np.ndarray, Counts: np.ndarray, time: float, results) -> tuple:
     # Initiiere den Geradenfit zur Reskalierung der X-Achse
     Pealpos = [results.params['p1'].value, results.params['p4'].value]
     Peakerr = [results.params['p1'].stderr, results.params['p4'].stderr]
-    zone_between_peaks=np.min(Counts[int(results.params['p4'].value): int(results.params['p1'].value) ])
-    #zone_between_peaks=0
-
+    
     Kalibparams, Kaliberr = Energiekalibration(Pealpos, Peakerr)
     EnergieMCA, dEnergieMCA = calibrationfunction(MCAdatensatz, Kalibparams[0], Kalibparams[1], Kaliberr[0], Kaliberr[1])
+
+    dCounts =np.sqrt( np.sqrt(Counts)**2 +results.params['p6'].stderr**2)
     for i in range(len(Counts)):
-        Counts[i]=Counts[i]-zone_between_peaks*(erf((Counts[i]-results.params['p1'].value)/(results.params['p2'].value))-1)
-    dCounts = np.sqrt(Counts)
-    
+        Counts[i]=Counts[i]-results.params['p6'].value*(erf((Counts[i]-results.params['p1'].value)/(results.params['p2'].value))-1)
     weighted_sum = EnergieMCA * Counts
-    dweighted_sum = np.sqrt((dEnergieMCA * Counts) ** 2 + (dCounts * dEnergieMCA) ** 2)
+    dweighted_sum = np.sqrt((dEnergieMCA * Counts) ** 2 + (dCounts * EnergieMCA) ** 2)
 
     Summe = np.sum(weighted_sum)                                    # Egesamt
     dSumme = np.sqrt(np.sum(dweighted_sum ** 2))
