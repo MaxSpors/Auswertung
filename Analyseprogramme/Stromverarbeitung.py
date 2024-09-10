@@ -39,22 +39,21 @@ def I_ionisation(MCAdatensatz: np.ndarray, Counts: np.ndarray, time: float, resu
     Pealpos = [results.params['p1'].value, results.params['p4'].value]
     Peakerr = [results.params['p1'].stderr, results.params['p4'].stderr]
     zone_between_peaks=np.min(Counts[int(results.params['p4'].value): int(results.params['p1'].value) ])
+    #zone_between_peaks=0
 
     Kalibparams, Kaliberr = Energiekalibration(Pealpos, Peakerr)
     EnergieMCA, dEnergieMCA = calibrationfunction(MCAdatensatz, Kalibparams[0], Kalibparams[1], Kaliberr[0], Kaliberr[1])
     for i in range(len(Counts)):
         Counts[i]=Counts[i]-zone_between_peaks*(erf((Counts[i]-results.params['p1'].value)/(results.params['p2'].value))-1)
-
     dCounts = np.sqrt(Counts)
     
     weighted_sum = EnergieMCA * Counts
     dweighted_sum = np.sqrt((dEnergieMCA * Counts) ** 2 + (dCounts * dEnergieMCA) ** 2)
 
-    Summe = np.sum(weighted_sum)
+    Summe = np.sum(weighted_sum)                                    # Egesamt
     dSumme = np.sqrt(np.sum(dweighted_sum ** 2))
 
     W_ion = 28.4 / 1000  # keV
-    I_ioni = Summe / W_ion / time  # e^- / s
-    dI_ioni = dSumme / W_ion / time
-
+    I_ioni = Summe / (W_ion* time) *1.60217662e-19
+    dI_ioni = dSumme / (W_ion * time) *1.60217662e-19
     return I_ioni, dI_ioni

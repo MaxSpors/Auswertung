@@ -6,14 +6,17 @@ import os
 
 def Gain_best(Strom: np.ndarray, I_ionistaion: float, Offset: float, dStrom: np.ndarray, dOffset: float, dI_ionisation: float):
     # Konstante
-    e_charge = 1.602e-7  # Umrechnungskonstante
     # Berechnung des Gains und der Unsicherheit
     Readout=np.mean(Strom)
     dReadout=np.mean(dStrom)
-    Gain = np.abs((Readout - Offset) / (I_ionistaion * e_charge))
-    dGain = np.sqrt((dReadout / (I_ionistaion * e_charge))**2 +
-                    (dOffset / (I_ionistaion * e_charge))**2 +
-                    ((Readout - Offset) * (dI_ionisation * e_charge) / (I_ionistaion * e_charge)**2)**2)
+    Readout=Readout*10**(-12)
+    dReadout=dReadout*10**(-12)
+    Offset=Offset*10**(-12)
+    dOffset=dOffset*10**(-12)
+    Gain = np.abs((Readout - Offset) / (I_ionistaion))
+    dGain = np.sqrt((dReadout / (I_ionistaion))**2 +
+                    (dOffset / (I_ionistaion))**2 +
+                    ((Readout - Offset) * (dI_ionisation) / (I_ionistaion)**2)**2)
 
     return Gain, dGain
 
