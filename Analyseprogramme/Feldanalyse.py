@@ -11,7 +11,7 @@ def plot_data_with_fit(ax, x, data, Fehler, label, color, alpha, fit_result=None
         ax.plot(x, fit_result.best_fit, '-', color=color)
     legend = ax.legend()
     for legend_handle in legend.legendHandles:
-        legend_handle.set_alpha(1)  # Setzen Sie die Opazität auf 1 (vollständig undurchsichtig)
+        legend_handle.set_alpha(1)  # Setzen Sie die Opazitï¿½t auf 1 (vollstï¿½ndig undurchsichtig)
     ax.grid(True, color="slategray", linewidth="0.3", linestyle="--",alpha=0.4)
 
 def feldanalyse(folder_path, Feld):
