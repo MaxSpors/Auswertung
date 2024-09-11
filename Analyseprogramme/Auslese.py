@@ -52,7 +52,7 @@ def read_out(file_path):
         dCounts = np.sqrt(counts)
         identification=extract_timestamp(file_name)
 
-    mask = counts >= 6
+    mask = counts >= 3
     #MCA = MCA[mask]
     dCounts = dCounts[mask]
     counts = counts[mask]

@@ -101,16 +101,16 @@ def SpektrenAnpassung(x: np.ndarray, y: np.ndarray, dy: np.ndarray):   # Setze d
     params = Parameters()
     params.add('p0', value=max_counts_photo, min=0.6*max_counts_photo, max=1.5*max_counts_photo)
     params.add('p1', value=max_index_photo, min=max_index_photo-70, max=max_index_photo+70)
-    params.add('p2', value=sigma_photo, min=0.2*sigma_photo, max=1.5*sigma_photo+90)
+    params.add('p2', value=sigma_photo, min=0.1*sigma_photo, max=6*sigma_photo+80)
 
     params.add('p3', value=max_counts_escape, min=0.5*max_counts_escape-30, max=4*max_counts_escape+20)
-    params.add('p4', value=max_index_escape, min=max_index_escape-70, max=max_index_escape+70)
-    params.add('p5', value=sigma_escape, min=0.1*sigma_escape, max=2.4*sigma_escape+90)
+    params.add('p4', value=max_index_escape, min=max_index_escape-100, max=max_index_escape+70)
+    params.add('p5', value=sigma_escape, min=0.2*sigma_escape, max=6*sigma_escape+80)
 
-    params.add('p6', value=Amp_Erf, min=-3*np.abs(Amp_Erf), max=3*np.abs(Amp_Erf))
+    params.add('p6', value=Amp_Erf, min=-2*np.abs(Amp_Erf), max=2*np.abs(Amp_Erf))
 
-    params.add('p7', value=np.max(y[0:60]), min=0.1*np.max(y[0:60]), max=1.5*np.max(y[0:60]))
-    params.add('p8', value=time_constant, min=0.01*time_constant, max=4*time_constant+40)
+    params.add('p7', value=np.max(y[0:60]), min=0.05*np.max(y[0:60]), max=1.5*np.max(y[0:60]))
+    params.add('p8', value=time_constant, min=0.005*time_constant, max=2*time_constant+10)
     weights = 1.0 / dy
 
     result = gmodel.fit(y, params, x=x, weights=weights,method='leastsq')
