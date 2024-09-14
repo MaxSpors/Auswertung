@@ -1,0 +1,646 @@
+Command	Spannung	Speed	Channel
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1074.0	5	306
+RampV	1448.0	5	305
+RampV	2194.0	5	304
+RampV	2604.0	5	303
+RampV	3351.0	5	302
+RampV	3351.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1094.0	5	306
+RampV	1468.0	5	305
+RampV	2214.0	5	304
+RampV	2624.0	5	303
+RampV	3371.0	5	302
+RampV	3371.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1114.0	5	306
+RampV	1488.0	5	305
+RampV	2234.0	5	304
+RampV	2644.0	5	303
+RampV	3391.0	5	302
+RampV	3391.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1134.0	5	306
+RampV	1508.0	5	305
+RampV	2254.0	5	304
+RampV	2664.0	5	303
+RampV	3411.0	5	302
+RampV	3411.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1154.0	5	306
+RampV	1528.0	5	305
+RampV	2274.0	5	304
+RampV	2684.0	5	303
+RampV	3431.0	5	302
+RampV	3431.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1174.0	5	306
+RampV	1548.0	5	305
+RampV	2294.0	5	304
+RampV	2704.0	5	303
+RampV	3451.0	5	302
+RampV	3451.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1194.0	5	306
+RampV	1568.0	5	305
+RampV	2314.0	5	304
+RampV	2724.0	5	303
+RampV	3471.0	5	302
+RampV	3471.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1214.0	5	306
+RampV	1588.0	5	305
+RampV	2334.0	5	304
+RampV	2744.0	5	303
+RampV	3491.0	5	302
+RampV	3491.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1234.0	5	306
+RampV	1608.0	5	305
+RampV	2354.0	5	304
+RampV	2764.0	5	303
+RampV	3511.0	5	302
+RampV	3511.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1254.0	5	306
+RampV	1628.0	5	305
+RampV	2374.0	5	304
+RampV	2784.0	5	303
+RampV	3531.0	5	302
+RampV	3531.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1274.0	5	306
+RampV	1648.0	5	305
+RampV	2394.0	5	304
+RampV	2804.0	5	303
+RampV	3551.0	5	302
+RampV	3551.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1294.0	5	306
+RampV	1668.0	5	305
+RampV	2414.0	5	304
+RampV	2824.0	5	303
+RampV	3571.0	5	302
+RampV	3571.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1314.0	5	306
+RampV	1688.0	5	305
+RampV	2434.0	5	304
+RampV	2844.0	5	303
+RampV	3591.0	5	302
+RampV	3591.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1334.0	5	306
+RampV	1708.0	5	305
+RampV	2454.0	5	304
+RampV	2864.0	5	303
+RampV	3611.0	5	302
+RampV	3611.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1354.0	5	306
+RampV	1728.0	5	305
+RampV	2474.0	5	304
+RampV	2884.0	5	303
+RampV	3631.0	5	302
+RampV	3631.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1374.0	5	306
+RampV	1748.0	5	305
+RampV	2494.0	5	304
+RampV	2904.0	5	303
+RampV	3651.0	5	302
+RampV	3651.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1394.0	5	306
+RampV	1768.0	5	305
+RampV	2514.0	5	304
+RampV	2924.0	5	303
+RampV	3671.0	5	302
+RampV	3671.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1414.0	5	306
+RampV	1788.0	5	305
+RampV	2534.0	5	304
+RampV	2944.0	5	303
+RampV	3691.0	5	302
+RampV	3691.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1434.0	5	306
+RampV	1808.0	5	305
+RampV	2554.0	5	304
+RampV	2964.0	5	303
+RampV	3711.0	5	302
+RampV	3711.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1454.0	5	306
+RampV	1828.0	5	305
+RampV	2574.0	5	304
+RampV	2984.0	5	303
+RampV	3731.0	5	302
+RampV	3731.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1474.0	5	306
+RampV	1848.0	5	305
+RampV	2594.0	5	304
+RampV	3004.0	5	303
+RampV	3751.0	5	302
+RampV	3751.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1494.0	5	306
+RampV	1868.0	5	305
+RampV	2614.0	5	304
+RampV	3024.0	5	303
+RampV	3771.0	5	302
+RampV	3771.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1514.0	5	306
+RampV	1888.0	5	305
+RampV	2634.0	5	304
+RampV	3044.0	5	303
+RampV	3791.0	5	302
+RampV	3791.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1534.0	5	306
+RampV	1908.0	5	305
+RampV	2654.0	5	304
+RampV	3064.0	5	303
+RampV	3811.0	5	302
+RampV	3811.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1554.0	5	306
+RampV	1928.0	5	305
+RampV	2674.0	5	304
+RampV	3084.0	5	303
+RampV	3831.0	5	302
+RampV	3831.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1574.0	5	306
+RampV	1948.0	5	305
+RampV	2694.0	5	304
+RampV	3104.0	5	303
+RampV	3851.0	5	302
+RampV	3851.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1594.0	5	306
+RampV	1968.0	5	305
+RampV	2714.0	5	304
+RampV	3124.0	5	303
+RampV	3871.0	5	302
+RampV	3871.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1614.0	5	306
+RampV	1988.0	5	305
+RampV	2734.0	5	304
+RampV	3144.0	5	303
+RampV	3891.0	5	302
+RampV	3891.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1634.0	5	306
+RampV	2008.0	5	305
+RampV	2754.0	5	304
+RampV	3164.0	5	303
+RampV	3911.0	5	302
+RampV	3911.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1654.0	5	306
+RampV	2028.0	5	305
+RampV	2774.0	5	304
+RampV	3184.0	5	303
+RampV	3931.0	5	302
+RampV	3931.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1674.0	5	306
+RampV	2048.0	5	305
+RampV	2794.0	5	304
+RampV	3204.0	5	303
+RampV	3951.0	5	302
+RampV	3951.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1694.0	5	306
+RampV	2068.0	5	305
+RampV	2814.0	5	304
+RampV	3224.0	5	303
+RampV	3971.0	5	302
+RampV	3971.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1714.0	5	306
+RampV	2088.0	5	305
+RampV	2834.0	5	304
+RampV	3244.0	5	303
+RampV	3991.0	5	302
+RampV	3991.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1734.0	5	306
+RampV	2108.0	5	305
+RampV	2854.0	5	304
+RampV	3264.0	5	303
+RampV	4011.0	5	302
+RampV	4011.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1754.0	5	306
+RampV	2128.0	5	305
+RampV	2874.0	5	304
+RampV	3284.0	5	303
+RampV	4031.0	5	302
+RampV	4031.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1774.0	5	306
+RampV	2148.0	5	305
+RampV	2894.0	5	304
+RampV	3304.0	5	303
+RampV	4051.0	5	302
+RampV	4051.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1794.0	5	306
+RampV	2168.0	5	305
+RampV	2914.0	5	304
+RampV	3324.0	5	303
+RampV	4071.0	5	302
+RampV	4071.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1814.0	5	306
+RampV	2188.0	5	305
+RampV	2934.0	5	304
+RampV	3344.0	5	303
+RampV	4091.0	5	302
+RampV	4091.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1834.0	5	306
+RampV	2208.0	5	305
+RampV	2954.0	5	304
+RampV	3364.0	5	303
+RampV	4111.0	5	302
+RampV	4111.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1854.0	5	306
+RampV	2228.0	5	305
+RampV	2974.0	5	304
+RampV	3384.0	5	303
+RampV	4131.0	5	302
+RampV	4131.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1874.0	5	306
+RampV	2248.0	5	305
+RampV	2994.0	5	304
+RampV	3404.0	5	303
+RampV	4151.0	5	302
+RampV	4151.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1894.0	5	306
+RampV	2268.0	5	305
+RampV	3014.0	5	304
+RampV	3424.0	5	303
+RampV	4171.0	5	302
+RampV	4171.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
+RampV	746.0	5	308
+RampV	1074.0	5	307
+RampV	1914.0	5	306
+RampV	2288.0	5	305
+RampV	3034.0	5	304
+RampV	3444.0	5	303
+RampV	4191.0	5	302
+RampV	4191.0	5	301
+RampDone			
+MCAStart			
+Idle	90		
+MCAStop			
+MCAGetData			
+MCASave			
+MCAReset			
