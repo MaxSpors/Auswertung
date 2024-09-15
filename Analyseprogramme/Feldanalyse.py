@@ -14,56 +14,72 @@ def plot_data_with_fit(ax, x, data, Fehler, label, color, alpha, fit_result=None
         legend_handle.set_alpha(1)  # Setzen Sie die Opazitï¿½t auf 1 (vollstï¿½ndig undurchsichtig)
     ax.grid(True, color="slategray", linewidth="0.3", linestyle="--",alpha=0.4)
 
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
 def feldanalyse(folder_path, Feld):
-    all_subfolders = [os.path.join(folder_path, subfolder) for subfolder in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, subfolder))]
-    num_subplots = len(all_subfolders)  # Anzahl der Subplots
+    # Liste aller .mca-Dateien im angegebenen Ordner
+    all_files = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.mca')]
     
-    if num_subplots == 0:
-        print("No subfolders found.")
+    # Sortiere die Dateien nach Größe
+    all_files.sort(key=os.path.getsize)
+    num_files = len(all_files)  # Anzahl der Dateien
+    
+    if num_files == 0:
+        print("No .mca files found.")
         return
     
     # Extraktion der Erwartungswerte des Photopeaks
-    Pos, DPos = [],[]
+    Pos, DPos = [], []
     E = []
-    s, Ds = [],[]
+    s, Ds = [], []
     
-    # Calculate the number of rows and columns for the subplots
+    # Berechne die Anzahl der Zeilen und Spalten für die Subplots
+    num_spectra_per_subplot = 3
+    num_subplots = int(np.ceil(num_files / num_spectra_per_subplot))
     num_cols = int(np.ceil(np.sqrt(num_subplots)))
     num_rows = int(np.ceil(num_subplots / num_cols))
     
     fig, axes = plt.subplots(num_rows, num_cols, figsize=(20, 20), dpi=300)
     axes = axes.flatten()
     
-    for ax, subfolder in zip(axes, all_subfolders):
-        for root, _, files in os.walk(subfolder):
-            files = [f for f in files if f.endswith('.mca')]
-            files.sort(key=extract_field_strength)
+    for i in range(num_subplots):
+        ax = axes[i]
+        start_idx = i * num_spectra_per_subplot
+        end_idx = min(start_idx + num_spectra_per_subplot, num_files)
+        for file_path in all_files[start_idx:end_idx]:
+            x, data, Fehler, identification = read_out(file_path)
+            x = np.linspace(0, len(data), len(data))
+            label = f"{identification} V/cm"
+            color = plt.cm.viridis(all_files.index(file_path) / len(all_files))
             
-            for i, file_path in enumerate(files):
-                full_path = os.path.join(root, file_path)
-                x,data, Fehler,identification = read_out(full_path)
-                x = np.linspace(0, len(data), len(data))
-                label = f"{identification} V/cm"
-                color = plt.cm.viridis(i / len(files))
-                
-                # Fit the data
-                fit_result = SpektrenAnpassung(x, data, Fehler)
-                peakpos = fit_result.best_values['p1']
-                peakerr = fit_result.params['p1'].stderr
-                
-                sigma = fit_result.best_values['p2']
-                dsigma = fit_result.params['p2'].stderr
+            # Fit the data
+            fit_result = SpektrenAnpassung(x, data, Fehler)
+            peakpos = fit_result.best_values['p1']
+            peakerr = fit_result.params['p1'].stderr
+            
+            sigma = fit_result.best_values['p2']
+            dsigma = fit_result.params['p2'].stderr
 
-                Pos.append(peakpos)
-                DPos.append(peakerr)
-                E.append(identification)
-                s.append(sigma)
-                Ds.append(dsigma)
-                
-                # Plot the data and the fit
-                plot_data_with_fit(ax, x, data, Fehler, label, color, 0.03, fit_result=fit_result)
+            Pos.append(peakpos)
+            DPos.append(peakerr)
+            E.append(identification)
+            s.append(sigma)
+            Ds.append(dsigma)
+            
+            # Plot the data and the fit
+            plot_data_with_fit(ax, x, data, Fehler, label, color, 0.03, fit_result=fit_result)
     
-    # Hide any unused subplots
+    # Verstecke ungenutzte Subplots
     for ax in axes[num_subplots:]:
         ax.axis('off')
     
@@ -73,6 +89,14 @@ def feldanalyse(folder_path, Feld):
     plt.show()
     
     return Pos, DPos, E, s, Ds
+
+# Beispielaufruf der Funktion
+PosD, ERRD, ED, SigmaD, dSigmaD = feldanalyse(r'C:\\Users\\spors\\OneDrive\\Dokumente\\Studium\\Bachelorarbeit\\Messungen und Auswertung\\Messdaten\\Neue Messungen\\Driftfeldanalyse', 'Driftfeld')
+
+def Korrektur(Array):
+    filtered_Array = [x for x in Array if x is not None]
+
+# Schritt 2: Berechnen Sie den Mittelwert der verbleibenden Werte
 
 def Korrektur(Array):
     filtered_Array = [x for x in Array if x is not None]
