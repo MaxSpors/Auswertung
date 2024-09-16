@@ -18,13 +18,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-import os
-import numpy as np
-import matplotlib.pyplot as plt
 
-import os
-import numpy as np
-import matplotlib.pyplot as plt
 
 def feldanalyse(folder_path, Feld):
     # Liste aller .mca-Dateien im angegebenen Ordner
@@ -90,11 +84,6 @@ def feldanalyse(folder_path, Feld):
     
     return Pos, DPos, E, s, Ds
 
-# Beispielaufruf der Funktion
-PosD, ERRD, ED, SigmaD, dSigmaD = feldanalyse(r'C:\\Users\\spors\\OneDrive\\Dokumente\\Studium\\Bachelorarbeit\\Messungen und Auswertung\\Messdaten\\Neue Messungen\\Driftfeldanalyse', 'Driftfeld')
-
-def Korrektur(Array):
-    filtered_Array = [x for x in Array if x is not None]
 
 # Schritt 2: Berechnen Sie den Mittelwert der verbleibenden Werte
 

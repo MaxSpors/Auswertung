@@ -1,8 +1,8 @@
 Command	Spannung	Speed	Channel
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	0.0	5	308
+RampV	328.0	5	307
+RampV	1074.0	5	306
+RampV	1448.0	5	305
 RampV	2194.0	5	304
 RampV	2604.0	5	303
 RampV	3351.0	5	302
@@ -12,12 +12,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_0Vcm		
+MCASave	Ind_0Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	20.0	5	308
+RampV	348.0	5	307
+RampV	1094.0	5	306
+RampV	1468.0	5	305
 RampV	2214.0	5	304
 RampV	2624.0	5	303
 RampV	3371.0	5	302
@@ -27,12 +27,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_100Vcm		
+MCASave	Ind_100Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	40.0	5	308
+RampV	368.0	5	307
+RampV	1114.0	5	306
+RampV	1488.0	5	305
 RampV	2234.0	5	304
 RampV	2644.0	5	303
 RampV	3391.0	5	302
@@ -42,12 +42,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_200Vcm		
+MCASave	Ind_200Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	60.0	5	308
+RampV	388.0	5	307
+RampV	1134.0	5	306
+RampV	1508.0	5	305
 RampV	2254.0	5	304
 RampV	2664.0	5	303
 RampV	3411.0	5	302
@@ -57,12 +57,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_300Vcm		
+MCASave	Ind_300Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	80.0	5	308
+RampV	408.0	5	307
+RampV	1154.0	5	306
+RampV	1528.0	5	305
 RampV	2274.0	5	304
 RampV	2684.0	5	303
 RampV	3431.0	5	302
@@ -72,12 +72,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_400Vcm		
+MCASave	Ind_400Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	100.0	5	308
+RampV	428.0	5	307
+RampV	1174.0	5	306
+RampV	1548.0	5	305
 RampV	2294.0	5	304
 RampV	2704.0	5	303
 RampV	3451.0	5	302
@@ -87,12 +87,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_500Vcm		
+MCASave	Ind_500Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	120.0	5	308
+RampV	448.0	5	307
+RampV	1194.0	5	306
+RampV	1568.0	5	305
 RampV	2314.0	5	304
 RampV	2724.0	5	303
 RampV	3471.0	5	302
@@ -102,12 +102,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_600Vcm		
+MCASave	Ind_600Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	140.0	5	308
+RampV	468.0	5	307
+RampV	1214.0	5	306
+RampV	1588.0	5	305
 RampV	2334.0	5	304
 RampV	2744.0	5	303
 RampV	3491.0	5	302
@@ -117,12 +117,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_700Vcm		
+MCASave	Ind_700Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	160.0	5	308
+RampV	488.0	5	307
+RampV	1234.0	5	306
+RampV	1608.0	5	305
 RampV	2354.0	5	304
 RampV	2764.0	5	303
 RampV	3511.0	5	302
@@ -132,12 +132,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_800Vcm		
+MCASave	Ind_800Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	180.0	5	308
+RampV	508.0	5	307
+RampV	1254.0	5	306
+RampV	1628.0	5	305
 RampV	2374.0	5	304
 RampV	2784.0	5	303
 RampV	3531.0	5	302
@@ -147,12 +147,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_900Vcm		
+MCASave	Ind_900Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	200.0	5	308
+RampV	528.0	5	307
+RampV	1274.0	5	306
+RampV	1648.0	5	305
 RampV	2394.0	5	304
 RampV	2804.0	5	303
 RampV	3551.0	5	302
@@ -162,12 +162,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1000Vcm		
+MCASave	Ind_1000Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	220.0	5	308
+RampV	548.0	5	307
+RampV	1294.0	5	306
+RampV	1668.0	5	305
 RampV	2414.0	5	304
 RampV	2824.0	5	303
 RampV	3571.0	5	302
@@ -177,12 +177,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1100Vcm		
+MCASave	Ind_1100Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	240.0	5	308
+RampV	568.0	5	307
+RampV	1314.0	5	306
+RampV	1688.0	5	305
 RampV	2434.0	5	304
 RampV	2844.0	5	303
 RampV	3591.0	5	302
@@ -192,12 +192,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1200Vcm		
+MCASave	Ind_1200Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	260.0	5	308
+RampV	588.0	5	307
+RampV	1334.0	5	306
+RampV	1708.0	5	305
 RampV	2454.0	5	304
 RampV	2864.0	5	303
 RampV	3611.0	5	302
@@ -207,12 +207,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1300Vcm		
+MCASave	Ind_1300Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	280.0	5	308
+RampV	608.0	5	307
+RampV	1354.0	5	306
+RampV	1728.0	5	305
 RampV	2474.0	5	304
 RampV	2884.0	5	303
 RampV	3631.0	5	302
@@ -222,12 +222,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1400Vcm		
+MCASave	Ind_1400Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	300.0	5	308
+RampV	628.0	5	307
+RampV	1374.0	5	306
+RampV	1748.0	5	305
 RampV	2494.0	5	304
 RampV	2904.0	5	303
 RampV	3651.0	5	302
@@ -237,12 +237,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1500Vcm		
+MCASave	Ind_1500Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	320.0	5	308
+RampV	648.0	5	307
+RampV	1394.0	5	306
+RampV	1768.0	5	305
 RampV	2514.0	5	304
 RampV	2924.0	5	303
 RampV	3671.0	5	302
@@ -252,12 +252,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1600Vcm		
+MCASave	Ind_1600Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	340.0	5	308
+RampV	668.0	5	307
+RampV	1414.0	5	306
+RampV	1788.0	5	305
 RampV	2534.0	5	304
 RampV	2944.0	5	303
 RampV	3691.0	5	302
@@ -267,12 +267,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1700Vcm		
+MCASave	Ind_1700Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	360.0	5	308
+RampV	688.0	5	307
+RampV	1434.0	5	306
+RampV	1808.0	5	305
 RampV	2554.0	5	304
 RampV	2964.0	5	303
 RampV	3711.0	5	302
@@ -282,12 +282,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1800Vcm		
+MCASave	Ind_1800Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	380.0	5	308
+RampV	708.0	5	307
+RampV	1454.0	5	306
+RampV	1828.0	5	305
 RampV	2574.0	5	304
 RampV	2984.0	5	303
 RampV	3731.0	5	302
@@ -297,12 +297,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_1900Vcm		
+MCASave	Ind_1900Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	400.0	5	308
+RampV	728.0	5	307
+RampV	1474.0	5	306
+RampV	1848.0	5	305
 RampV	2594.0	5	304
 RampV	3004.0	5	303
 RampV	3751.0	5	302
@@ -312,12 +312,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2000Vcm		
+MCASave	Ind_2000Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	420.0	5	308
+RampV	748.0	5	307
+RampV	1494.0	5	306
+RampV	1868.0	5	305
 RampV	2614.0	5	304
 RampV	3024.0	5	303
 RampV	3771.0	5	302
@@ -327,12 +327,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2100Vcm		
+MCASave	Ind_2100Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	440.0	5	308
+RampV	768.0	5	307
+RampV	1514.0	5	306
+RampV	1888.0	5	305
 RampV	2634.0	5	304
 RampV	3044.0	5	303
 RampV	3791.0	5	302
@@ -342,12 +342,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2200Vcm		
+MCASave	Ind_2200Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	460.0	5	308
+RampV	788.0	5	307
+RampV	1534.0	5	306
+RampV	1908.0	5	305
 RampV	2654.0	5	304
 RampV	3064.0	5	303
 RampV	3811.0	5	302
@@ -357,12 +357,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2300Vcm		
+MCASave	Ind_2300Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	480.0	5	308
+RampV	808.0	5	307
+RampV	1554.0	5	306
+RampV	1928.0	5	305
 RampV	2674.0	5	304
 RampV	3084.0	5	303
 RampV	3831.0	5	302
@@ -372,12 +372,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2400Vcm		
+MCASave	Ind_2400Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	500.0	5	308
+RampV	828.0	5	307
+RampV	1574.0	5	306
+RampV	1948.0	5	305
 RampV	2694.0	5	304
 RampV	3104.0	5	303
 RampV	3851.0	5	302
@@ -387,12 +387,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2500Vcm		
+MCASave	Ind_2500Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	520.0	5	308
+RampV	848.0	5	307
+RampV	1594.0	5	306
+RampV	1968.0	5	305
 RampV	2714.0	5	304
 RampV	3124.0	5	303
 RampV	3871.0	5	302
@@ -402,12 +402,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2600Vcm		
+MCASave	Ind_2600Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	540.0	5	308
+RampV	868.0	5	307
+RampV	1614.0	5	306
+RampV	1988.0	5	305
 RampV	2734.0	5	304
 RampV	3144.0	5	303
 RampV	3891.0	5	302
@@ -417,12 +417,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2700Vcm		
+MCASave	Ind_2700Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	560.0	5	308
+RampV	888.0	5	307
+RampV	1634.0	5	306
+RampV	2008.0	5	305
 RampV	2754.0	5	304
 RampV	3164.0	5	303
 RampV	3911.0	5	302
@@ -432,12 +432,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2800Vcm		
+MCASave	Ind_2800Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	580.0	5	308
+RampV	908.0	5	307
+RampV	1654.0	5	306
+RampV	2028.0	5	305
 RampV	2774.0	5	304
 RampV	3184.0	5	303
 RampV	3931.0	5	302
@@ -447,12 +447,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_2900Vcm		
+MCASave	Ind_2900Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	600.0	5	308
+RampV	928.0	5	307
+RampV	1674.0	5	306
+RampV	2048.0	5	305
 RampV	2794.0	5	304
 RampV	3204.0	5	303
 RampV	3951.0	5	302
@@ -462,12 +462,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3000Vcm		
+MCASave	Ind_3000Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	620.0	5	308
+RampV	948.0	5	307
+RampV	1694.0	5	306
+RampV	2068.0	5	305
 RampV	2814.0	5	304
 RampV	3224.0	5	303
 RampV	3971.0	5	302
@@ -477,12 +477,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3100Vcm		
+MCASave	Ind_3100Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	640.0	5	308
+RampV	968.0	5	307
+RampV	1714.0	5	306
+RampV	2088.0	5	305
 RampV	2834.0	5	304
 RampV	3244.0	5	303
 RampV	3991.0	5	302
@@ -492,12 +492,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3200Vcm		
+MCASave	Ind_3200Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	660.0	5	308
+RampV	988.0	5	307
+RampV	1734.0	5	306
+RampV	2108.0	5	305
 RampV	2854.0	5	304
 RampV	3264.0	5	303
 RampV	4011.0	5	302
@@ -507,12 +507,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3300Vcm		
+MCASave	Ind_3300Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	680.0	5	308
+RampV	1008.0	5	307
+RampV	1754.0	5	306
+RampV	2128.0	5	305
 RampV	2874.0	5	304
 RampV	3284.0	5	303
 RampV	4031.0	5	302
@@ -522,12 +522,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3400Vcm		
+MCASave	Ind_3400Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	700.0	5	308
+RampV	1028.0	5	307
+RampV	1774.0	5	306
+RampV	2148.0	5	305
 RampV	2894.0	5	304
 RampV	3304.0	5	303
 RampV	4051.0	5	302
@@ -537,12 +537,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3500Vcm		
+MCASave	Ind_3500Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	720.0	5	308
+RampV	1048.0	5	307
+RampV	1794.0	5	306
+RampV	2168.0	5	305
 RampV	2914.0	5	304
 RampV	3324.0	5	303
 RampV	4071.0	5	302
@@ -552,12 +552,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3600Vcm		
+MCASave	Ind_3600Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	740.0	5	308
+RampV	1068.0	5	307
+RampV	1814.0	5	306
+RampV	2188.0	5	305
 RampV	2934.0	5	304
 RampV	3344.0	5	303
 RampV	4091.0	5	302
@@ -567,12 +567,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3700Vcm		
+MCASave	Ind_3700Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	760.0	5	308
+RampV	1088.0	5	307
+RampV	1834.0	5	306
+RampV	2208.0	5	305
 RampV	2954.0	5	304
 RampV	3364.0	5	303
 RampV	4111.0	5	302
@@ -582,12 +582,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3800Vcm		
+MCASave	Ind_3800Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	780.0	5	308
+RampV	1108.0	5	307
+RampV	1854.0	5	306
+RampV	2228.0	5	305
 RampV	2974.0	5	304
 RampV	3384.0	5	303
 RampV	4131.0	5	302
@@ -597,12 +597,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_3900Vcm		
+MCASave	Ind_3900Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	800.0	5	308
+RampV	1128.0	5	307
+RampV	1874.0	5	306
+RampV	2248.0	5	305
 RampV	2994.0	5	304
 RampV	3404.0	5	303
 RampV	4151.0	5	302
@@ -612,12 +612,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_4000Vcm		
+MCASave	Ind_4000Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	820.0	5	308
+RampV	1148.0	5	307
+RampV	1894.0	5	306
+RampV	2268.0	5	305
 RampV	3014.0	5	304
 RampV	3424.0	5	303
 RampV	4171.0	5	302
@@ -627,12 +627,12 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_4100Vcm		
+MCASave	Ind_4100Vcm.txt		
 MCAReset			
-RampV	746.0	5	308
-RampV	1074.0	5	307
-RampV	1820.0	5	306
-RampV	2194.0	5	305
+RampV	840.0	5	308
+RampV	1168.0	5	307
+RampV	1914.0	5	306
+RampV	2288.0	5	305
 RampV	3034.0	5	304
 RampV	3444.0	5	303
 RampV	4191.0	5	302
@@ -642,5 +642,5 @@ MCAStart
 Idle	90		
 MCAStop			
 MCAGetData			
-MCASave	TF1_4200Vcm		
+MCASave	Ind_4200Vcm.txt		
 MCAReset			
